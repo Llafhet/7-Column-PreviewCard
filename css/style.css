@@ -1,0 +1,137 @@
+:root{
+/* ### Primary */
+--Gold : hsl(31, 77%, 52%);
+--Cyan : hsl(184, 100%, 22%);
+--Green : hsl(179, 100%, 13%);
+/* ### Neutral */
+--white: hsla(0, 0%, 100%, 0.75);
+--Gray: hsl(0, 0%, 95%);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    /* height: 800px; */
+    margin: 0 auto;
+    justify-content: center;
+    background-color: bisque;
+}
+
+.card1{
+    background-image: url(../images/icon-sedans.svg);
+    background-repeat: no-repeat;
+    background-position: 2.5rem 2rem;
+    height:400px;
+    width: 100%;
+    margin-top: 50px;
+    border-radius:1rem 1rem 0 0;
+    background-color: var(--Gold);
+    padding-left: 2.5rem;
+}
+
+.card2{
+    background-image: url(../images/icon-suvs.svg);
+    background-repeat: no-repeat;
+    background-position: 2.5rem 2rem;
+    height:400px;
+    width: 100%;
+    background-color: var(--Cyan);
+    padding-left: 2.5rem;
+}
+
+.card3{
+    background-image: url(../images/icon-luxury.svg);
+    background-repeat: no-repeat;
+    background-position: 2.5rem 2rem;
+    height:400px;
+    width: 100%;
+    border-radius:0 0 1rem 1rem;
+    background-color: var(--Green);
+    margin-bottom: 50px;
+    padding-left: 2.5rem;
+
+}
+
+.title{
+    color: var(--Gray);
+    font-family: inherit;
+}
+ .paragraph{
+    color: var(--white);
+    font-size: 1rem;
+    padding:1.5em 1.5em 1.5em 0;
+    line-height: 1.5em;
+}
+
+.buton{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    width: 150px;
+    height: 40px;
+    border-radius: .7em;
+    background-color: var(--Gray);
+    text-align: center;
+    align-content: center;
+}
+
+@media (min-width:768px) {
+
+    .card{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 90%;
+    /* height: 800px; */
+    /* justify-content: center;
+    align-items: center; */
+    justify-content: space-evenly;
+    margin-top: 60px;
+    }
+
+    .card1{
+        display: flex;
+        flex-direction: column;
+    background-image: url(../images/icon-sedans.svg);
+    background-repeat: no-repeat;
+    height:400px;
+    width: 100%;
+    background-color: var(--Gold);
+        border-radius:1rem 0 0 1rem;
+    }
+
+    .card2{
+        display: flex;
+        flex-direction: column;
+    background-image: url(../images/icon-suvs.svg);
+    background-repeat: no-repeat;
+    height:400px;
+    width: 100%;
+    background-color: var(--Cyan);
+    }
+
+    .card3{
+        display: flex;
+        flex-direction: column;
+    background-image: url(../images/icon-luxury.svg);
+    background-repeat: no-repeat;
+    height:400px;
+    width: 100%;
+    background-color: var(--Green);
+            border-radius:0 1rem 1rem 0;
+    }
+
+    .title{
+        margin-top: 3rem;
+    }
+}
